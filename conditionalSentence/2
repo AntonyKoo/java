@@ -1,0 +1,27 @@
+// switch 구문
+// a.k.a. 특별한 형태의 조건문 
+
+public class Main {
+    public static void main(String[] args) {
+        // switch 조건문
+
+        int score = 80;
+        char grade;
+
+        switch(score) {
+            case 90:
+                grade = 'A';
+                break;
+            case 80:
+                grade = 'B';
+                break;
+            case 70:
+                grade = 'C';
+                break;
+            default:
+                grade = 'D';
+                break;
+        }
+        System.out.println("your grade is " + grade);
+    }
+}

@@ -1,5 +1,5 @@
 // 조건문 중 while문
-// 문) while 조건문을 사용해서 1부터 10까지 합을 구해 반환하라
+// 문) while 조건문을 사용해서 1부터 10까지 합을 구해 반환하라.
 
 public class Main {
     public static void main(String[] args) {
@@ -13,5 +13,30 @@ public class Main {
     }
     
     System.out.println("sum is " + sum);
+    }
+}
+
+// ==== 구분선 ====
+// 문2) 하나의 정수 n을 입력 받아서, 
+// while 반복문을 사용하여 n의 약수를 모두 출력하라. 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a = 1;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter n: ");
+        int n = sc.nextInt();
+        
+        while(a <= n) {
+            if(n % a == 0)
+                System.out.print(a + " ");
+            a += 1;
+        }
+        
+        sc.close();
     }
 }

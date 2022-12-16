@@ -1,0 +1,17 @@
+// 조건문 중 while문
+// 문) while 조건문을 사용해서 1부터 10까지 합을 구해 반환하라
+
+public class Main {
+    public static void main(String[] args) {
+    
+    int a = 1;  // 시작점
+    int sum = 0; // (합의)결과
+    
+    while (a <= 10) {
+        sum += a;
+        a += 1;
+    }
+    
+    System.out.println("sum is " + sum);
+    }
+}

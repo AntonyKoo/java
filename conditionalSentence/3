@@ -40,3 +40,25 @@ public class Main {
         sc.close();
     }
 }
+
+// ==== 구분선 ====
+// 하나의 정수 n을 입력 받아서
+// 각 자리수를 떼어서 출력하라
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter n: ");
+        int n = sc.nextInt();
+        
+        while(n > 0) {
+            int m = n % 10;
+            System.out.println(m);
+            n /= 10;
+        }
+        sc.close();
+    }
+}

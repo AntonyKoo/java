@@ -1,0 +1,25 @@
+// for 반복문
+// 문_ 1보다 큰 양의 정수 n을 입력 받는다
+// n이 소수인지 판별하는 프로그램을 작성하라
+// hint) 어떤 수 n의 약수의 개수가 2개라면? n은 소수이다
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    
+        Scanner sc = new Scanner(System.in);
+        int n;
+        int count = 0;
+
+        System.out.println("Enter n: ");
+        n = sc.nextInt();
+
+        for(int i=1; i<=n; i++){
+            if(n%i == 0) count++;
+        }
+        if (count ==2) System.out.println("n은 소수 입니다.");
+        else System.out.println(n + " 은 합성수 입니다.");
+    }
+
+}

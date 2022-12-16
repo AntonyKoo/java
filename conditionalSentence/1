@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // 두 정수를 입력 받아서, 두 수 중, 큰 수를 출력하는 코드를 작성하라.
+        // 이때 두 수는 항상 다르다.
+        Scanner sc = new Scanner(System.in);
+
+        int x, y;
+        int max = 0;
+
+        System.out.println("첫번째 정수를 입력해 주세요: ");
+        x = sc.nextInt();
+
+        System.out.println("두번째 정수를 입력해 주세요: ");
+        y = sc.nextInt();
+
+        if (x == y) {
+            System.out.println("첫번째 정수와 같은 숫자를 입력하셨습니다.");
+            System.out.println("두 정수는 달라야 합니다.");
+            System.out.println("두번째 정수를 입력해 주세요: ");
+            y = sc.nextInt();
+        }
+
+        max = Math.max(x,y);
+        System.out.println("가장 큰 수는 " + max + "입니다.");
+        
+        sc.close();
+    }
+}

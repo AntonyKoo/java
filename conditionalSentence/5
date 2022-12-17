@@ -3,11 +3,31 @@
 
 public class Main {
     public static void main(String[] args) {
+    
         int a=0;
         while(a<10){
+       
             a++;
             if(a%3==0) continue;
             System.out.println(a);
+            
+        }
+    }
+}
+
+
+// ==== 구분선 ====
+// i가 짝수인 경우, continue를 수행하라
+
+public class Main {
+    public static void main(String[] args) {
+    
+        for(int i=1; i<=7; i++){
+        
+            System.out.println("before continue: " + i);
+            if(i%2 == 0) continue;
+            System.out.println("**** after continue: " + i);
+            
         }
     }
 }

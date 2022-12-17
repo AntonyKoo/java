@@ -1,0 +1,13 @@
+// continue 구문 기초
+// 1 ~ 10까지 수 중 3의 배수를 제외하고 출력하는 코드를 작성하라.
+
+public class Main {
+    public static void main(String[] args) {
+        int a=0;
+        while(a<10){
+            a++;
+            if(a%3==0) continue;
+            System.out.println(a);
+        }
+    }
+}

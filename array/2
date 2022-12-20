@@ -18,3 +18,35 @@ public class Main {
 
 // [10, 20, 30, 40, 50, 60]
 // [0, 1, 20, 30, 40, 5, 6, 7, 8, 9]
+
+
+// ==== 구분선 ====
+
+// 배열에 배열 대입해 보긔
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int[] data1 = {4,2,9,10,1};
+        int[] data2; // 생성은 안 되었고, 선언만 한 상태죠?
+
+        data2 = data1;  // data1을 data2에 할당해 봅시다.
+
+        System.out.println(data1);
+        System.out.println(data2);
+
+        data1[1] = 5000;
+        System.out.println(Arrays.toString(data1));
+        System.out.println(Arrays.toString(data2));
+
+        // 결론 참조값이 같다.
+        // 뭔소리냐면? 하나의 배열을 공유한단 소리죠?
+    }
+}
+
+// 결과는 아래와 같습니다. 
+// [I@3ac3fd8b
+// [I@3ac3fd8b
+// [4, 5000, 9, 10, 1]
+// [4, 5000, 9, 10, 1]

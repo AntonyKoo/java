@@ -62,3 +62,25 @@ public class Main {
         sc.close();
     }
 }
+
+// ==== 구분선 ====
+// 중첩 반복문
+// while 반복문을 활용하여, 구구단을 출력하는 코드를 작성하라
+public class Main {
+    public static void main(String[] args) {
+    
+        int row,col;  // 가로에 대한 반복, 세로에 대한 반복을 생각해서, 2개의 변수를 선언합니다. 
+        row = 2; // 구구단은 2단부터 있으니께 2로 초기화 해줍니다잉
+        
+        while(row < 10){  // 단을 증가 시켜주는 반복 부분
+            col = 1;
+            
+            while(col<10){ 세로  // 곱할 수 1 ~ 9까지 반복해 주는 부분
+                System.out.println(row + "*" + col + " = " + row*col);
+                System.out.println();
+                col++;
+            }
+            row++;
+        }
+    }
+}

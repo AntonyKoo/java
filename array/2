@@ -1,0 +1,20 @@
+// 배열의 복사
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int[] origin = {10,20,30,40,50,60};
+        int[] destination = {0,1,2,3,4,5,6,7,8,9};
+
+        System.arraycopy(origin, 1,destination,2,3);  // 복사할 대상, 시작 idx, 덮힐 대상, 시작 idx, 복사할 요소 개수 
+        System.out.println(Arrays.toString(origin));
+        System.out.println(Arrays.toString(destination));
+    }
+}
+
+// 결과는 아래와 같습니다.
+
+// [10, 20, 30, 40, 50, 60]
+// [0, 1, 20, 30, 40, 5, 6, 7, 8, 9]

@@ -23,3 +23,17 @@ public class Main {
     }
 
 }
+
+// ==== 구분선 ====
+// for문을 활용하여 구구단을 출력하는 프로그램을 작성하라.
+
+public class Main {
+    public static void main(String[] args) {
+
+        for(int i=2; i<10; i++) {
+            for(int j=1; j<10; j++){
+                System.out.println(i + "*" + j + "=" + i*j);
+            }
+        }
+    }
+}

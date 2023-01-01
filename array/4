@@ -1,0 +1,33 @@
+// for-each 반복문 
+
+// 기본 사용법
+int data[] = {4,2,9,10,1};
+
+for (int x:data){ // 배열 data의 각 요소를 변수 x에 담아 반복
+    System.out.println(x);
+}
+
+
+// ==== 구분선 ====
+
+
+// double type, for-each 반복문을 활용하여, 실수의 평균을 구하라. 
+double[] score = {90.5, 88.3, 70.8, 67.2, 92.4, 80.7};
+double total = 0.0;
+double average;
+
+for (double s:score)
+    total += s;
+average = total/score.length;
+System.out.println("Average: " + average);
+
+// Average: 81.65
+
+
+// ==== 구분선 ====
+
+
+// char type, for-each 반복문, ASCII-code를 활용한 예
+char alpha[] = {'A', 'B', 'C', 'D', 'E'};
+
+for (char x:alpha) System.out.println(x + ":" + (char)(x+32));

@@ -10,3 +10,32 @@ public class Main {
         System.out.println("after show call");
     }
 }
+
+
+// ==== 구분선 ==== 
+
+
+public class Main {
+    // 인사 메서드()
+    public static void greeting1(){
+        System.out.println("Good morning");
+    }
+
+    public static void greeting2(){
+        System.out.println("Good afternoon");
+    }
+
+    public static void greeting3(){
+        System.out.println("Good evening");
+    }
+    
+    // main() 메서드
+    public static void main(String[] args) {
+        System.out.println("In the morning, we say,,,");
+        greeting1();
+        System.out.println("In the afternoon, we say,,,");
+        greeting2();
+        System.out.println("In the evening, we say,,,");
+        greeting3();
+    }
+}

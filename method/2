@@ -1,0 +1,30 @@
+// 메서드 만드는 케이스 4가지
+
+// 1. 입력.출력. 모두 없는 경우
+public class Method {
+  public static void show(){
+  System.out.println("I am show method");
+  }
+
+  public static void main(String[] args) {
+  System.out.println("before calling show method");
+  show();
+  System.out.println("after calling show method");
+  }
+}
+
+// 2. 입력 있고, 출력 없는 경우
+
+public class Method {
+
+    public static void findPower(int x, int y) {
+        int result =1 ;
+        for(int a=1; a<=y; a++) result *= x;
+        System.out.println(x + "의 " + y + "제곱: " + result);
+    }
+    
+    public static void main(String[] args) {
+        int a=2, b=10;
+        findPower(a,b);
+    }
+}

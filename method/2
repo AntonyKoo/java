@@ -49,4 +49,18 @@ public class Method {
 
 
 // 4. 입력. 출력.이 모두 존재하는 경우
+static int add(int x, int y) {
+    int result;
+    result = x + y;
+    return result;
+}
 
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter two integers");
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+    int c = add(a,b);
+    System.out.println(a + " + " + b + " = " + c);
+    sc.close();
+}

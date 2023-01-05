@@ -13,6 +13,7 @@ public class Method {
   }
 }
 
+
 // 2. 입력 있고, 출력 없는 경우
 
 public class Method {
@@ -28,3 +29,24 @@ public class Method {
         findPower(a,b);
     }
 }
+
+
+// 3. 입력이 없고, 출력이 있는 경우
+public class Method {
+
+    public static int doSomething(){
+        int result;
+        result = 10 * 100;
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        int x;
+        x = doSomething();
+        System.out.println("x: " + x);
+    }
+}
+
+
+// 4. 입력. 출력.이 모두 존재하는 경우
+

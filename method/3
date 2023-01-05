@@ -1,0 +1,26 @@
+// return
+
+import java.util.Scanner;
+
+public class Main {
+
+    static boolean check(int n) {
+    
+        if (n%2 == 0)
+            return true;
+        else
+            return false;
+    }
+    
+    public static void main(String[] args) {
+    
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter one number");
+        int a = sc.nextInt();
+        
+        if (check(a) == true) System.out.println(a + " is even number");
+        else System.out.println(a + " is odd number");
+        
+        sc.close();
+    }
+}

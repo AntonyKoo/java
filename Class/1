@@ -1,0 +1,114 @@
+### 클래스와 객체
+### 연습코드 끄적끄적
+
+class Ditto {
+    private int x;
+    public int y;
+    int z;
+}
+
+class Book {
+    private String title;
+    private int price;
+
+    Book(){};
+    Book(String title, int price) {
+        this.title = title;
+        this.price = price;
+    }
+
+    String getTitle() {  // 접근자
+        return title;
+    }
+    
+    int getPrice() {  // 접근자
+        return price;
+    }
+    
+    void setTitle(String title) {  // 변경자
+        this.title = title;
+    }
+    
+    void setPrice(int price) {  // 변경자
+        this.price = price;
+    }
+
+    void printBook() {
+        System.out.println("title: " + title);
+        System.out.println("price: " + price);
+    }
+}
+
+class Block {
+    Block() {
+        System.out.println("I am constructor");
+    }
+    static {
+        System.out.println("I am static Block");
+    }
+    {
+        System.out.println("I am block"); // non-static block
+    }
+}
+
+class StaticTest {
+    void test() {
+        System.out.println("I am test method");
+    }
+
+    static void show() {
+        System.out.println("I am static method");
+    }
+
+    void print() {
+        test();
+        show();
+    }
+}
+
+class Data {
+    static int x;
+    int y;
+
+    Data(int x, int y) {
+        Data.x = x;
+        this.y = y;
+    }
+
+    void print() {
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+    }
+}
+
+class Person {
+    static int count;
+    String name;
+
+    Person() {
+        count ++;
+    }
+
+    static void printCount() {
+        System.out.println("count: " + count);
+    }
+}
+
+class Circle {
+    static double PI = 3.141592;
+    double radius;  // 반지름
+
+    Circle(double radius) {
+        this.radius = radius;
+    };
+
+    // 원 넓이
+    double area() {
+        return this.radius * this.radius * PI;
+    }
+
+    // 원 둘레
+    double perimeter() {
+        return 2 * PI * this.radius;
+    }
+}

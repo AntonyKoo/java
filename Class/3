@@ -1,0 +1,71 @@
+// 클래스의 상속
+
+public class Main {
+    public static void main(String[] args) {
+       Child c = new Child();
+        System.out.println("c.x: " + c.x);
+        System.out.println("c.y " + c.y);
+        System.out.println("c.z " + c.z);
+
+        c.show();
+        c.print();
+        c.check();
+    }
+}
+
+// Parent를 상속 받는 Child스클래스
+class Parent {
+    int x = 10;
+    int y = 20;
+
+    void show() {System.out.println("I am parent show");}
+    void print() {System.out.println("I am parent print");}
+}
+
+class Child extends Parent {
+    int y = 30;
+    int z = 40;
+
+    void show() {
+        System.out.println("I am child show");
+    }
+    void check() {
+        System.out.println("I am child check");
+    }
+}
+
+
+
+// Person을 상속 받는 Student 클래스
+
+class Person {
+    private String name;
+    private String phone;
+
+    Person(){}
+    Person(String name, String phone) {
+        this.name = name;
+        this.phone = phone;
+    }
+
+    void printPerson() {
+        System.out.println("name: " + name);
+        System.out.println("phone: " + phone);
+    }
+}
+
+class Student extends Person {
+    private int score;
+
+    Student(){}
+    Student(String name, String phone, int score) {
+        super(name, phone);
+        this.score = score;
+    }
+
+    void printStudent() {
+        printPerson();
+        System.out.println("score: " + score);
+    }
+
+}

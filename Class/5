@@ -1,0 +1,30 @@
+// final 키워드 사용 예제입니다. 
+
+// 메인 클래스쥬?
+public class Main {
+    public static void main(String[] args) {
+        Circle c1 = new Circle(1.5);
+        Circle c2 = new Circle(2.2);
+
+        // 원의 넓이 = 반지름 * 반지름 * 원주율
+        double c1Area = Circle.PI * c1.getRadius() * c1.getRadius();
+        double c2Area = Circle.PI * c2.getRadius() * c2.getRadius();
+
+        System.out.println("c1 area: " + c1Area);
+        System.out.println("c2 area: " +c2Area);
+    }
+}
+
+// Circle class 입니다.
+class Circle {
+    // final 데이터는 static 으로 정의해서 모든 인스턴스가 같은 값을 공유하도록 하는 것이 좋은 사용법 이쥬~
+    static final double PI = 3.141592;
+    private double radius; // 반지름
+
+    Circle(){}
+    Circle(double radius) {this.radius = radius;}
+
+    double getRadius() {return radius;}
+
+    void setRadius(double radius) { this.radius = radius;}
+}
